@@ -31,7 +31,7 @@ function NodeCard({ node, collapsed, onToggle }: NodeCardProps) {
         hasChildren ? "cursor-pointer hover:bg-muted transition-colors" : "",
       ].join(" ")}
     >
-      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-100 text-blue-400">
+      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0B5D66]/10 text-[#0B5D66]">
         <UserIcon className="h-5 w-5" />
       </div>
       <div className="text-center">
@@ -104,7 +104,7 @@ export function HierarchyTreeDialog({ open, onOpenChange }: HierarchyTreeDialogP
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="flex max-h-[85vh] flex-col sm:max-w-5xl">
+      <DialogContent className="flex h-[80vh] w-[75vw] sm:max-w-[75vw] flex-col">
         <DialogHeader>
           <DialogTitle>Supervisor Hierarchy</DialogTitle>
         </DialogHeader>
